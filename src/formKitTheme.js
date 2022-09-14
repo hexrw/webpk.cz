@@ -4,13 +4,13 @@
 const textClassification = {
     label: 'block mb-1 font-bold text-sm formkit-invalid:text-red-500',
     inner: `
-    max-w-md
-    border
-    border-gray-400
-    formkit-invalid:border-red-500
-    rounded-lg mb-1
-    overflow-hidden
-    focus-within:border-blue-500
+        max-w-md
+        border
+        border-gray-400
+        formkit-invalid:border-red-500
+        rounded-lg mb-1
+        overflow-hidden
+        focus-within:border-blue-500
     `,
     input:
     'w-full h-10 px-3 border-none text-base text-gray-700 placeholder-gray-400',
@@ -74,7 +74,11 @@ export default {
     },
     search: textClassification,
     select: textClassification,
-    submit: buttonClassification,
+    submit: {
+        wrapper: 'mb-1',
+        input:
+        'w-full mt-4 bg-blue-500 hover:bg-blue-600 text-white text-sm font-normal py-3 px-5 rounded-lg',
+    },
     tel: textClassification,
     text: textClassification,
     textarea: {

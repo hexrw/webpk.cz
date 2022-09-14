@@ -22,48 +22,48 @@ const blueBlobText = ref(null)
 </script>
 
 <template>
-<div class="min-h-screen flex flex-col justify-center py-28 md:py-0">
+<div class="min-h-screen flex flex-col justify-center py-28 lg:py-0">
     <div class="px-5 md:px-10 lg:px-16">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold drop-shadow">Webové stránky na míru</h1>
-        <p class="text-xl md:text-2xl lg:text-3xl font-medium drop-shadow">Moderní webové stránky, které budou přesně odpovídat Vašim potřebám.</p>
+        <h1 class="text-4xl lg:text-6xl p-5 drop-shadow">Webové stránky na míru</h1>
+        <p class="text-xl md:text-2xl lg:text-3xl font-medium p-5 drop-shadow">Moderní webové stránky, které budou přesně odpovídat Vašim potřebám.</p>
         <div class="mt-10">
             <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
-                <div class="relative drop-shadow">
+                <div class="p-5 relative drop-shadow bg-white bg-opacity-20 rounded-lg">
                 <dt>
                     <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white hover:text-yellow-300">
                     <BoltIcon class="h-6 w-6" />
                     </div>
-                    <p class="ml-16 text-lg font-medium leading-6">Rychlost</p>
+                    <p class="ml-16 text-lg font-medium leading-6">Rychlé</p>
                 </dt>
-                <dd class="mt-2 ml-16 text-base text-gray-800">Díky mému přístupu a výběru technologií bude Váš web bleskově rychlý. Součástí finálního produktu je jen to, co je opravdu třeba. Soubory jsou kompresovány pomocí velmi efektivního algoritmu Brotli.</dd>
+                <dd class="mt-2 ml-16 text-base text-gray-800">Díky mému přístupu a výběru technologií bude Váš web bleskově rychlý. Součástí finálního produktu je jen to, co je opravdu třeba.</dd>
                 </div>
 
-                <div class="relative drop-shadow">
+                <div class="p-5 relative drop-shadow bg-white bg-opacity-20 rounded-lg">
                 <dt>
                     <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white hover:text-gray-300">
                     <WrenchScrewdriverIcon class="h-6 w-6" />
                     </div>
-                    <p class="ml-16 text-lg font-medium leading-6">Současnost</p>
+                    <p class="ml-16 text-lg font-medium leading-6">Moderní</p>
                 </dt>
                 <dd class="mt-2 ml-16 text-base text-gray-800">Sleduji vývoj a neustále se přizpůsobuji moderním trendům.</dd>
                 </div>
 
-                <div class="relative drop-shadow">
+                <div class="p-5 relative drop-shadow bg-white bg-opacity-20 rounded-lg">
                 <dt>
                     <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white hover:text-amber-800">
                     <ScaleIcon class="h-6 w-6" />
                     </div>
-                    <p class="ml-16 text-lg font-medium leading-6">Stabilita</p>
+                    <p class="ml-16 text-lg font-medium leading-6">Stabilní</p>
                 </dt>
                 <dd class="mt-2 ml-16 text-base text-gray-800">Používám spolehlivé ověřené technologie. Píši kvalitní kód.</dd>
                 </div>            
 
-                <div class="relative drop-shadow">
+                <div class="p-5 relative drop-shadow bg-white bg-opacity-20 rounded-lg">
                 <dt>
                     <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white hover:text-cyan-400">
                     <DeviceTabletIcon class="h-6 w-6" />
                     </div>
-                    <p class="ml-16 text-lg font-medium leading-6">Responzivita</p>
+                    <p class="ml-16 text-lg font-medium leading-6">Responzivní</p>
                 </dt>
                 <dd class="mt-2 ml-16 text-base text-gray-800">Váš web bude vypadat skvěle na obrazovkách zařízení všech velikostí.</dd>
                 </div>
@@ -109,10 +109,10 @@ const blueBlobText = ref(null)
             },
             particles: {
                 color: {
-                    value: '#3b82f6'
+                    value: '#83aff7'
                 },
                 links: {
-                    color: '#3588fb',
+                    color: '#9dbef5',
                     distance: 200,
                     enable: true,
                     opacity: 0.5,

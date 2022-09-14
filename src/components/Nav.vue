@@ -3,13 +3,20 @@ import { ref } from "vue"
 import { useRouter } from "vue-router"
 import logo from "../assets/logo.svg"
 
-const routes = useRouter().getRoutes()
+
+const exceptions = [
+    "404",
+    "Zásady zpracování osobních údajů",
+    "Obchodní podmínky",
+]
+
+const routes = useRouter().getRoutes().filter(route => !exceptions.includes(route.name))
 
 const isMenuOpen = ref(false)
 </script>
 
 <template>
-<nav class="border-gray-200 absolute w-full px-2 sm:px-4 py-2.5 rounded z-10">
+<nav class="select-none border-gray-200 absolute w-full px-2 sm:px-4 py-2.5 rounded z-10">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
         <router-link to="/" class="flex items-center">
             <img :src="logo" class="mr-3 h-6 sm:h-9" alt="Logo" />
@@ -20,7 +27,7 @@ const isMenuOpen = ref(false)
         <svg class="w-6 h-6 fill-current" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
         </button>
         <div :class="[{ hidden: !isMenuOpen }, 'w-full md:block md:w-auto']" id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0 md:bg-white">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0 md:bg-slate-50 md:bg-opacity-30">
             <li v-for="route in routes">
             <router-link :to="route.path" @click="isMenuOpen ? isMenuOpen = !isMenuOpen : null"
                 class="block py-2 pr-4 pl-3 text-gray-700 rounded md:bg-transparent md:p-0"

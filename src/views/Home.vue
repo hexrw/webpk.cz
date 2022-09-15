@@ -27,7 +27,7 @@ const blueBlobText = ref(null)
         <h1 class="text-4xl lg:text-6xl p-5 drop-shadow">Webové stránky na míru</h1>
         <p class="text-xl md:text-2xl lg:text-3xl font-medium p-5 drop-shadow">Moderní webové stránky, které budou přesně odpovídat Vašim potřebám.</p>
         
-        <button class="absolute z-50 transition-all px-8 py-3 rounded-md border border-blue-500 bg-blue-100" @mouseover="e => e.target.style.transform = `translate(${Math.floor(Math.random() * (200 - 20 + 1) + 20)}px, ${Math.floor(Math.random() * (200 - 20 + 1) + 20)}px)`">$$$ ZDARMA</button>
+        <button class="absolute z-50 transition-all px-8 py-3 rounded-md border border-blue-500 bg-blue-100" @mouseover="e => e.target.style.transform = `translate(${Math.floor(Math.random() * (300 - 100 + 1) + 100)}px, ${Math.floor(Math.random() * (300 - 100 + 1) + 100)}px)`">$$$ ZDARMA</button>
         
         <div class="mt-10">
             <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">

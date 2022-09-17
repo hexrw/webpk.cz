@@ -40,7 +40,7 @@ import {
                     </li>
                 </ul>
                 <span class="grow"></span> <!-- This is a spacer -->
-                <router-link to="/kontaktni-formular&c=static" class="select-none p-5 rounded-lg bg-gradient-to-r from-teal-400 to-emerald-300 hover:from-teal-500 hover:to-emerald-400 focus:ring-4 focus:ring-emerald-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
+                <router-link to="/kontaktni-formular?c=static" class="select-none p-5 rounded-lg bg-gradient-to-r from-teal-400 to-emerald-300 hover:from-teal-500 hover:to-emerald-400 focus:ring-4 focus:ring-emerald-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
             </div>
             <!-- Pricing Card -->
             <div class="flex flex-col p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-amber-200 shadow shadow-amber-200">
@@ -66,7 +66,7 @@ import {
                     </li>
                 </ul>
                 <span class="grow"></span> <!-- This is a spacer -->
-                <router-link to="/kontaktni-formular&c=plus" class="select-none p-5 rounded-lg bg-gradient-to-r from-amber-500 to-yellow-300 hover:from-amber-600 hover:to-yellow-400 focus:ring-4 focus:ring-amber-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
+                <router-link to="/kontaktni-formular?c=plus" class="select-none p-5 rounded-lg bg-gradient-to-r from-amber-500 to-yellow-300 hover:from-amber-600 hover:to-yellow-400 focus:ring-4 focus:ring-amber-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
             </div>
             <!-- Pricing Card -->
             <div class="flex flex-col p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-violet-400 shadow shadow-violet-200">
@@ -100,7 +100,7 @@ import {
                     </li>
                 </ul>
                 <span class="grow"></span> <!-- This is a spacer -->
-                <router-link to="/kontaktni-formular&c=pro" class="select-none p-5 rounded-lg bg-gradient-to-r from-purple-500 to-violet-300 hover:from-purple-600 hover:to-violet-400 focus:ring-4 focus:ring-violet-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
+                <router-link to="/kontaktni-formular?c=pro" class="select-none p-5 rounded-lg bg-gradient-to-r from-purple-500 to-violet-300 hover:from-purple-600 hover:to-violet-400 focus:ring-4 focus:ring-violet-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
             </div>
         </div>
 

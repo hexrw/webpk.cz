@@ -1,7 +1,12 @@
-# Vue 3 + Vite
+# webpk.cz
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Setup
 
-## Recommended IDE Setup
+Vue 3 + Vite + TailwindCSS
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Dependencies
+
+- Vue Router
+- FormKit
+- Heroicons
+- tsParticles

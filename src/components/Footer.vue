@@ -14,9 +14,9 @@
             <p>IČO: <b class="font-bold">17503400</b></p>
         </div>
     </div>
-    <div class="mt-6 md:mt-10 lg:mt-16 text-center text-slate-200">
-        <router-link to="/obchodni-podminky" class="mr-4 lg:md-8">Obchodní podmínky</router-link>
-        <router-link to="/zasady-zpracovani-osobnich-udaju">Zásady zpracování osobních údajů</router-link>
+    <div class="mt-6 md:mt-10 lg:mt-16 text-center justify-center flex flex-wrap">
+        <router-link to="/obchodni-podminky" class="mr-4 lg:md-8">Obchodní&nbsp;podmínky</router-link>
+        <router-link to="/zasady-zpracovani-osobnich-udaju">Zásady&nbsp;zpracování&nbsp;osobních&nbsp;údajů</router-link>
     </div>
     <div class="mt-4 lg:mt-8 text-center text-slate-200">
         <p>Copyright &copy; 2022 Petr Kolonicz</p>

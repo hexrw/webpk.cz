@@ -160,6 +160,26 @@ const blueBlobText = ref(null)
 </svg>
 <div class="bg-blue-500 text-white px-5 pt-20">
     <h2 class="text-2xl font-semibold" ref="blueBlobText">Nabízené služby</h2>
+    <dl>
+        <div>
+            <dt>
+                <p>Tvorba webových stránek/aplikací</p>
+            </dt>
+            <dd>Tvorba moderních reaktivních webových stránek či dynamických webových aplikací na míru dle vašich potřeb.</dd>
+        </div>
+        <div>
+            <dt>
+                <p>Hosting</p>
+            </dt>
+            <dd>Hosting webových stránek či aplikací společně s případnou databází a případnými APIs.</dd>
+        </div>
+        <div>
+            <dt>
+                <p>Přepsání/redesign starých webových stránek</p>
+            </dt>
+            <dd></dd>
+        </div>
+    </dl>
 </div>
 <svg class="bg-blue-500 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
     <path d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,213.3C672,203,768,181,864,181.3C960,181,1056,203,1152,213.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -167,7 +187,26 @@ const blueBlobText = ref(null)
 
 <div class="py-16 md:py-24 lg:py-32 px-5">
     <h2>Proč si vybrat zrovna mě?</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut assumenda quod, pariatur, accusamus laudantium non, doloremque quibusdam tempora tempore mollitia dolore reprehenderit fugiat quo similique unde quasi deleniti animi recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, architecto. Rerum, eaque fugiat. Voluptatibus, dolor. Nostrum provident, odio consectetur suscipit fuga officia molestias cum necessitatibus quia perferendis quod eligendi a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem corporis iste ratione aspernatur libero nulla laborum impedit molestiae repellendus. Vel possimus corrupti culpa nobis? Eligendi impedit harum facilis doloremque!</p>
+    <dl>
+        <div>
+            <dt>
+                <p>Komunikace</p>
+            </dt>
+            <dd>Profesionální přístup k tvorbě webových stránek a aplikací.</dd>
+        </div>
+        <div>
+            <dt>
+                <p>Rozumné ceny</p>
+            </dt>
+            <dd>Nikdo přece nechce platit desítky tisíc za obyčejné webové stránky.</dd>
+        </div>
+        <div>
+            <dt>
+                <p>Rychlost</p>
+            </dt>
+            <dd>Dle statistik od společnosti Google <a class="text-blue-700 underline hover:no-underline" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/" target="_blank">53% návštěvníků z telefonu opustí webovou stránku, která se načítá déle než 3 vteřiny</a>.</dd>
+        </div>
+    </dl>
 </div>
 
 </template>

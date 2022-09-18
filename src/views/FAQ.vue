@@ -3,6 +3,7 @@ import { ref, computed } from "vue"
 import {
     MagnifyingGlassIcon,
 } from "@heroicons/vue/24/outline"
+import search from "../helpers/search.js"
 
 
 const questions = {
@@ -28,6 +29,15 @@ Doména (např. google.com) je vlastně takový alias pro IP adresu serveru, na 
 <p class="pt-5">Webové stránky jsou vymezeny pouze doménou, pod kterou spadají.</p>
 `,
 
+"Co je to API?": /*html*/`
+<p>API (zkratka pro <span class="font-bold underline tracking-wide">A</span>pplication <span class="font-bold underline">P</span>rogramming <span class="font-bold underline">I</span>nterface) je v kontextu webových stránek a webových aplikací "služba", která umožňuje komunikaci mezi právě webovými stránkami/webovou aplikací, které/která běží v prohlížeči návštěvníka, a serverem.</p>
+<p class="pt-5">Představte si například jednoduchý blog. Zde je nějaké API třeba pro přidávání příspěvků do databáze, upravování příspěvků v databázi a získávání příspěvků z databáze.</p>
+`,
+
+"Co je myšleno statickými webovými stránkami?" : /*html*/`
+Statická webová stránka, je taková stránka, která po načtení do prohlížeče uživatele už svůj obsah nijak nemění. To by byla například stránka kadeřnictví, která obsahuje pouze nějaký úvod s několika fotografiemi, ceníkem, mapou a kontaktními údaji.
+`,
+
 "Co za technologie používám a proč? (pro pokročilé)": /*html*/`
 <p>Frontend webu píši v moderním reaktivním JavaScript frameworku Vue.js. Proč právě Vue? Tento framework jsem si vybral především pro jeho rychlost a reaktivitu. Je to progresivní, výkonný framework, který se především v posledních letech těší velké popularitě. V některých případech používám také nadstavbu JavaScriptu, TypeScript.</p>
 <p class="pt-5">Pro vývoj Backendu používám JavaScript (Node.js) a jako databázi používám MongoDB či PostgreSQL. Přestože znám programovacích jazyků několik, preferuji JavaScript pro jeho rychlost a oblíbenost.</p>
@@ -36,13 +46,18 @@ Doména (např. google.com) je vlastně takový alias pro IP adresu serveru, na 
 
 const searchInput = ref("")
 const questionsFiltered = computed(_ => {
-    const filtered = {}
 
-    Object.keys(questions)
-        .filter(question => question.toLowerCase().includes(searchInput.value.toLowerCase()))
-        .forEach(key => filtered[key] = questions[key])
-    
-    return filtered
+    // Get keys and values by key indexes
+    let result = {}
+
+    search(Object.keys(questions), searchInput.value)
+        .forEach(index => {
+            const key = Object.keys(questions)[index]
+            const val = Object.values(questions)[index]
+            result[key] = val
+        })
+
+    return result
 })
 const data = computed(_ => searchInput.value === "" ? questions : questionsFiltered.value)
 </script>
@@ -74,7 +89,7 @@ const data = computed(_ => searchInput.value === "" ? questions : questionsFilte
     </details>
 </li>
 <li v-else>
-    <p class="text-xl text-gray-600 text-center">Nebyl naleze žádný výsledek.</p>
+    <p class="text-xl text-gray-600 text-center">Nebyl nalezen žádný výsledek.</p>
 </li>
 </ul>
 

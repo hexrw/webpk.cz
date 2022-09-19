@@ -6,6 +6,10 @@ import {
     ScaleIcon,
     DeviceTabletIcon,
     ArrowDownIcon,
+    CodeBracketIcon,
+    ServerStackIcon,
+    PaintBrushIcon,
+    MagnifyingGlassIcon,
 } from "@heroicons/vue/24/outline"
 import { loadFull } from "tsparticles"
 
@@ -158,26 +162,36 @@ const blueBlobText = ref(null)
 <svg class="bg-blue-500 fill-white pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path d="M0,128L60,144C120,160,240,192,360,197.3C480,203,600,181,720,170.7C840,160,960,160,1080,165.3C1200,171,1320,181,1380,186.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
 </svg>
-<div class="bg-blue-500 text-white px-5 pt-20">
-    <h2 class="text-2xl font-semibold" ref="blueBlobText">Nabízené služby</h2>
-    <dl>
-        <div>
-            <dt>
-                <p>Tvorba webových stránek/aplikací</p>
+<div class="bg-blue-500 text-white px-5 pt-0 md:pt-4 lg:pt-6">
+    <h2 class="text-3xl font-bold tracking-tight text-center pb-8">Nabízené služby</h2>
+    <dl ref="blueBlobText" class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-6xl gap-6 lg:gap-12">
+        <div class="bg-white p-8 text-black rounded-md">
+            <dt class="pb-2 flex flex-col md:flex-row gap-4">
+                <CodeBracketIcon class="w-12 mx-auto md:mx-0" />
+                <p class="text-xl font-bold my-auto text-center md:text-left">Tvorba webových stránek/aplikací</p>
             </dt>
-            <dd>Tvorba moderních reaktivních webových stránek či dynamických webových aplikací na míru dle vašich potřeb.</dd>
+            <dd class="text-center md:text-left">Tvorba moderních reaktivních webových stránek či dynamických webových aplikací na míru dle vašich potřeb.</dd>
         </div>
-        <div>
-            <dt>
-                <p>Hosting</p>
+        <div class="bg-white p-8 text-black rounded-md">
+            <dt class="pb-2 flex flex-col md:flex-row gap-4">
+                <ServerStackIcon class="w-12 mx-auto md:mx-0" />
+                <p class="text-xl font-bold my-auto text-center md:text-left">Hosting</p>
             </dt>
-            <dd>Hosting webových stránek či aplikací společně s případnou databází a případnými APIs.</dd>
+            <dd class="text-center md:text-left">Hosting webových stránek či aplikací společně s případnou databází a případnými APIs.</dd>
         </div>
-        <div>
-            <dt>
-                <p>Přepsání/redesign starých webových stránek</p>
+        <div class="bg-white p-8 text-black rounded-md">
+            <dt class="pb-2 flex flex-col md:flex-row gap-4">
+                <PaintBrushIcon class="w-12 mx-auto md:mx-0" />
+                <p class="text-xl font-bold my-auto text-center md:text-left">Přepsání/redesign starých webových stránek</p>
             </dt>
-            <dd></dd>
+            <dd class="text-center md:text-left">Vaše stránky už Vám nevyhovují? Jsou zastaralé a vypadají špatně na menších obrazovkách? Za rozumnou cenu Vám udělám kompletní redesign a přepsání/aktualizaci kódu.</dd>
+        </div>
+        <div class="bg-white p-8 text-black rounded-md">
+            <dt class="pb-2 flex flex-col md:flex-row gap-4">
+                <MagnifyingGlassIcon class="w-12 mx-auto md:mx-0" />
+                <p class="text-xl font-bold my-auto text-center md:text-left">Optimalizace pro vyhledávače</p>
+            </dt>
+            <dd class="text-center md:text-left">Chcete být vidět? Vaše stránky optimalizuji pro vyhledávače. To vás dostane mezi první výsledky ve vyhledávání a tím zvýší návštěvnost.</dd>
         </div>
     </dl>
 </div>
@@ -186,25 +200,25 @@ const blueBlobText = ref(null)
 </svg>
 
 <div class="py-16 md:py-24 lg:py-32 px-5">
-    <h2>Proč si vybrat zrovna mě?</h2>
+    <h2 class="font-semibold tracking-tight text-3xl">Proč si vybrat zrovna mě?</h2>
     <dl>
-        <div>
+        <div class="pt-5">
             <dt>
-                <p>Komunikace</p>
+                <p class="text-2xl tracking-wide pb-2">Komunikace</p>
             </dt>
-            <dd>Profesionální přístup k tvorbě webových stránek a aplikací.</dd>
+            <dd class="text-lg">Nestane se, že bych Vám přestal odpovídat. Věci Vám řeknu na rovinu, termíny, která Vám dám, dodržím.</dd>
         </div>
-        <div>
+        <div class="pt-5">
             <dt>
-                <p>Rozumné ceny</p>
+                <p class="text-2xl tracking-wide pb-2">Rozumné ceny</p>
             </dt>
-            <dd>Nikdo přece nechce platit desítky tisíc za obyčejné webové stránky.</dd>
+            <dd class="text-lg">Nikdo přece nechce platit desítky tisíc za obyčejné webové stránky. Moje ceny jsou fér a úměrné rozsáhlosti projektu.</dd>
         </div>
-        <div>
+        <div class="pt-5">
             <dt>
-                <p>Rychlost</p>
+                <p class="text-2xl tracking-wide pb-2">Rychlost</p>
             </dt>
-            <dd>Dle statistik od společnosti Google <a class="text-blue-700 underline hover:no-underline" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/" target="_blank">53% návštěvníků z telefonu opustí webovou stránku, která se načítá déle než 3 vteřiny</a>.</dd>
+            <dd class="text-lg">Dle statistik od společnosti Google <a class="text-blue-700 underline hover:no-underline" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/" target="_blank">53% návštěvníků z telefonu opustí webovou stránku, která se načítá déle než 3 vteřiny</a>. Proto je pro mne rychlost prioritou.</dd>
         </div>
     </dl>
 </div>

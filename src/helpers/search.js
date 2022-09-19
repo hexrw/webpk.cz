@@ -20,23 +20,32 @@ export default function search(arr, str) {
     // str = what to search for
     // arr = where to search in
 
-    const cleanse = input => input.toLowerCase()
-        .replace(/ě/g, "e")
-        .replace(/š/g, "s")
-        .replace(/č/g, "c")
-        .replace(/ř/g, "r")
-        .replace(/ž/g, "z")
-        .replace(/ý/g, "y")
-        .replace(/á/g, "a")
-        .replace(/í/g, "i")
-        .replace(/é/g, "e")
-        .replace(/ů/g, "u")
-        .replace(/ú/g, "u")
-        .replace(/ó/g, "o")
-        .replace(/ť/g, "t")
-        .replace(/ď/g, "d")
-        .replace(/ň/g, "n")
-        .replace(/[^a-z0-9 ]/g, "")
+    const toBeReplaced = {
+        "ě": "e",
+        "š": "s",
+        "č": "c",
+        "ř": "r",
+        "ž": "z",
+        "ý": "y",
+        "á": "a",
+        "í": "i",
+        "é": "e",
+        "ů": "u",
+        "ú": "u",
+        "ó": "o",
+        "ť": "t",
+        "ď": "d",
+        "ň": "n",
+    }
+
+    const cleanse = input => {
+        let res = input.toLowerCase()
+        Object.keys(toBeReplaced).forEach(key => {
+            res = res.replace(new RegExp(key, "g"), toBeReplaced[key])
+        })
+        res = res.replace(/[^a-z0-9 ]/g, "")
+        return res
+    }
 
     const arrCleansed = arr.map(cleanse)
     const strCleansed = cleanse(str)

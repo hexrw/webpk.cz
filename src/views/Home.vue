@@ -19,7 +19,7 @@ const particlesInit = async (engine) => {
 }
 
 const particlesLoaded = async (container) => {
-    console.log("Particles container loaded", container)
+    //console.debug("DEBUG | Particles container loaded", container)
 }
 
 const blueBlobText = ref(null)

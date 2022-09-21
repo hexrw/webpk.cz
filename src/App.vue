@@ -18,7 +18,10 @@ const route = useRoute()
         leave-from-class="opacity-100"
         leave-to-class="transform opacity-0"
     >
-        <div :key="route.path"> <!-- Force re-render to trigger transition -->
+        <div
+            :key="route.path"
+            class="min-h-screen"
+        > <!-- Force re-render to trigger transition -->
             <component :is="Component" />
         </div>
     </Transition>

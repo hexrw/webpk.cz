@@ -32,7 +32,6 @@ const routes = [
         name: "Zásady zpracování osobních údajů",
         component: _ => import("../views/ZasadyZpracovaniOsobnichUdaju.vue")
     },
-    { path: "/api" }, // ignore this route
     {
         path: "/:pathMatch(.*)",
         name: "404",

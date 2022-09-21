@@ -33,7 +33,7 @@ const routes = [
         component: _ => import("../views/ZasadyZpracovaniOsobnichUdaju.vue")
     },
     {
-        path: "/:pathMatch(.*)*",
+        path: "/:pathMatch(.*)",
         name: "404",
         component: _ => import("../components/404.vue")
     }
@@ -42,8 +42,11 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    scrollBehavior(to, from, savedPosition) { // always scroll to top
-        return { top: 0 }
+    scrollBehavior(to, from, savedPosition) {
+        return { // always scroll to top
+            top: 0,
+            behavior: "smooth",
+        }
     }
 })
 

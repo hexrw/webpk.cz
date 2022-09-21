@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 5000",
+    "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -15,6 +15,7 @@
     "@heroicons/vue": "^2.0.10",
     "fastest-levenshtein": "^1.0.16",
     "levenshtein-wasm": "^1.2.0",
+    "mongoose": "^6.6.1",
     "particles.vue3": "^2.2.4",
     "tsparticles": "^2.2.4",
     "vue": "^3.2.37",

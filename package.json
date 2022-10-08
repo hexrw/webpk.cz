@@ -17,6 +17,7 @@
     "levenshtein-wasm": "^1.2.0",
     "mongoose": "^6.6.1",
     "particles.vue3": "^2.2.4",
+    "tailwind-scrollbar": "^2.0.1",
     "tsparticles": "^2.2.4",
     "vue": "^3.2.37",
     "vue-router": "^4.1.5"

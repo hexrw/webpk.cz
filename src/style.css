@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* { @apply selection:text-blue-500 selection:bg-slate-100 }
+html {
+    @apply selection:text-blue-500 selection:bg-slate-100
+        scrollbar scrollbar-thumb-sky-400 scrollbar-track-slate-200
+        scrollbar-thumb-rounded
+}

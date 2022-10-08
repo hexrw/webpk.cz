@@ -1,6 +1,5 @@
 /** @type {import("tailwindcss").Config} */
 const defaultTheme = require("tailwindcss/defaultTheme")
-const formKitTailwind = require("@formkit/themes/tailwindcss")
 
 
 module.exports = {
@@ -16,6 +15,7 @@ module.exports = {
         },
     },
     plugins: [
-        formKitTailwind,
+        require("@formkit/themes/tailwindcss"),
+        require("tailwind-scrollbar")({ nocompatible: true }),
     ],
 }

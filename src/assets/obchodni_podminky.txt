@@ -1,0 +1,65 @@
+Tyto všeobecné obchodní podmínky (“Podmínky”) živnostníka Petr Kolonicz, se sídlem Špičák 118, 381 01 Český Krumlov, IČO 17503400, zapsán v živnostenském rejstříku pod jménem Petr Kolonicz, e-mail spravce@webpk.cz, („Dodavatel”) upravují v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník, ve znění pozdějších předpisů („Občanský zákoník“) vzájemná práva a povinnosti Vás, jakožto Odběratele, a Dodavatele, vzniklá v souvislosti nebo na základě kupní smlouvy („Smlouva“) uzavřené prostřednictvím webových stránek webpk.cz (včetně subdomén) či skrz elektronickou korespondenci. 
+Všechny informace o zpracování Vašich osobních údajů jsou obsaženy v Zásadách zpracování osobních údajů, které naleznete v patičce stránky.
+Ustanovení těchto Podmínek jsou nedílnou součástí Smlouvy. Smlouva a Podmínky jsou vyhotoveny v českém jazyce. Znění Podmínek může Dodavatel jednostranně měnit či doplňovat. Tímto ustanovením nejsou dotčena práva a povinnosti vzniklá po dobu účinnosti předchozího znění Podmínek.
+Komunikujeme primárně na dálku. Proto i pro naši Smlouvu platí, že jsou použity prostředky komunikace na dálku, které umožňují, abychom se spolu dohodli bez současné fyzické přítomnosti Nás a Vás, a Smlouva je tak uzavřena distančním způsobem prostřednictvím rozhraní webové stránky.
+Pokud některá část Podmínek odporuje tomu, co jsme si společně schválili v rámci procesu Vaší objednávky našich služeb, bude mít tato konkrétní dohoda před Podmínkami přednost.
+
+1. Některé definice
+    1.1. Cena je finanční částka, kterou budete hradit za poskytnuté služby či poskytnutý digitální software;
+    1.2. DPH je daň z přidané hodnoty dle platných právních předpisů;
+    1.3. Faktura je daňový doklad vystavený v souladu se zákonem o dani z přidané hodnoty na Celkovou cenu;
+    1.4. Objednávka je Váš neodvolatelný návrh na uzavření Smlouvy o koupi služby/digitálního softwaru mezi Vámi a Dodavatelem;
+    1.5. Server - fyzické či virtuální zařízení trvale připojené k internetu;
+    1.6. Služba je poskytovaná služba, kterou Dodavatel poskytuje prostřednictvím webových stránek webpk.cz (včetně subdomén) či skrz elektronickou korespondenci;
+    1.7. Smlouva je smlouva o koupi služby/digitálního softwaru uzavřená mezi Vámi a Dodavatelem;
+    1.8. Doménové jméno je unikátní identifikátor, kterým je možné na internetu identifikovat konkrétní zařízení, které je připojeno k internetu;
+    1.9. Hosting je poskytování prostoru na serveru, pro uložení dat a běh programů, přístupných prostřednictvím internetu;
+2. Obecná ustanovení a poučení
+    2.1. Smlouva je uzavřena na dobu neurčitou.
+    2.2. Odběratel je seznámen se základními či doplňkovými informacemi pomocí webu webpk.cz, případně pomocí individuální elektronické či telefonické korespondence. Získané informace či podmínky tímto akceptuje.
+    2.2. Při objednání služby či digitálního softwaru je Vaše povinnost poskytnout Dodavateli všechny informace správně a pravdivě. Informace, které jste Dodavateli poskytli při objednání bude Dodavatel tedy považovat za správné a pravdivé. 
+    2.3. V případě zrušení služby z důvodu neuhrazení služby Odběratelem, neodpovídá Dodavatel za škodu vzniklou ztrátou dat Odběratele či ztrátou dostupnosti provozovaných aplikací.
+3. Uzavření smlouvy
+    3.1. Smlouvu Dodavatelem je možné uzavřít pouze v českém jazyce.
+    3.2. Smlouva je uzavírána na dálku prostřednictvím webových stránek webpk.cz, elektronickou či telefonickou korespondencí.
+    3.3. Smlouva nabývá platnosti a účinnosti okamžikem ústní nebo písemné dohody a nebo prostřednictvím webových stránek webpk.cz.
+    3.4. Platbou odběratel potvrzuje, že je seznámen s těmito obchodními podmínkami a akceptuje je.
+4. Cenové a platební podmínky
+    4.1. Faktura bude vystavena v elektronické podobě po uhrazení Celkové ceny a bude zaslána na Vaši e-mailovou adresu pokud nebylo předem stanoveno jinak.
+    4.2. V případě platby bankovním převodem je Celková cena zaplacena připsáním na bankovní účet dodavatele, v ostatních případech je zaplacena v okamžik provedení platby.
+    4.3. Hodinová sazba se počítá za každou započatou hodinu.
+    4.4. Konečná Celková cena se může lišit od původního odhadu Dodavatele. V takovém případě bude Dodavatel odběratele informovat.
+    4.5. Při neuhrazení ceny v souladu s těmito obchodními podmínkami a dohodnutými podmínkami, má Dodavatel právo přestat poskytovat danou službu.
+5. Reklamace
+    5.1. Reklamace je možná pouze v případě, že nebyli Dodavatelem splněny předem domluvené podmínky, nebo je produkt nefunkční.
+    5.2. Reklamaci je možné podat v písemné formě na e-mailovou adresu.
+    5.3. Reklamace musí být vyřízena bez zbytečných odkladů a to nejpozději do 30 dnů od jejího podání, pokud nebylo stanoveno jinak.
+    5.4. V případě zjištění neplatné reklamace (nebude-li zjištěna oznámená závada nebo půjde-li o závadu nespadající pod záruku) je Dodavatel oprávněn požadovat od Odběratele náhradu všech nákladů spojených s vyřízením reklamace.
+6. Odstoupení od smlouvy
+    6.1. Odstoupením od smlouvy se odběratel zavazuje uhradit dodavateli dosavadní náklady za provedenou práci pokud takové náklady vznikly.
+    6.2. Dle § 1837 odstavce d) nelze vrátit zboží, které bylo upraveno podle přání spotřebitele nebo pro jeho osobu.
+7. Řešení sporů
+    7.1. Dodavatel není ve vztahu k Odběrateli vázán žádnými kodexy chování ve smyslu ustanovení § 1826 odst. 1 písm. e) Občanského zákoníku.
+    7.2. Vyřizování stížností Odběratelů je zajištěno prostřednictvím elektronické adresy spravce@webpk.cz. Informace o vyřízení stížnosti budou zaslány na elektronickou adresu odběratele.
+8. Práva a povinnosti Dodavatele
+    8.1. Dodavatel nezaručuje nepřetržitý bezchybný provoz poskytovaných služeb a poskytovaného digitálního softwaru.
+    8.2. Dodavatel má právo provádět údržbu a opravy služeb a digitálního softwaru bez předchozího oznámení.
+    8.3. Dodavatel je oprávněn odstoupit od Smlouvy bez udání důvodu. V takovém případě má Odběratel právo požadovat od Dodavatele vrácení uhrazené částky.
+    8.4. Dodavatel neodpovídá za škody, které vznikly v důsledku úpravy dodaného digitálního softwaru ze strany Odběratele po okamžiku prodeje.
+    8.5. Dodavatel neodpovídá za výpadky poskytovaných služeb způsobené třetí stranou.
+    8.6. Dodavatel si vyhrazuje právo změnit cenu za službu či digitální software, pokud se změní zákon, kterým je regulována daně, poplatky, náklady či jiné faktory, které ovlivňují cenu služby či digitálního softwaru.
+    8.7. Dodavatel si vyhrazuje právo ukončit poskytování služby či digitálního softwaru, pokud se změní zákon, kterým je regulována daně, poplatky, náklady či jiné faktory, které ovlivňují cenu služby či digitálního softwaru.
+    8.8. Při překročení stanovených limitů v souvislosti s používáním služby či digitálního softwaru, má Dodavatel právo omezit či i plně zablokovat přístup k dané službě či digitálnímu softwaru.
+9. Práva a povinnosti Odběratele
+    9.1. Odběratel je povinen dodržovat obchodní podmínky Dodavatele.
+    9.2. Odběratel je povinen dodržovat zákon o ochraně osobních údajů.
+    9.3. Odběratel je povinen dodržovat zákon o autorském právu a právních předpisů o ochraně práv duševního vlastnictví.
+    9.4. Odběratel je povinen uvádět pouze pravdivé a aktuální údaje o jeho osobě ať už fyzické nebo právnické.
+    9.5. Odběratel je povinen zabezpečit přihlašovací údaje, které mu byly zaslány Dodavatelem, tak, aby nedošlo k jejich zneužití.
+    9.6. Odběratel výslovně souhlasí, aby Dodavatel zahájil poskytování Služby již před uplynutím zákonné lhůty pro odstoupení od smlouvy a vzdává se práva na odstoupení od smlouvy v zákonné lhůtě.
+    9.7. Odběratel má právo odstoupit od Smlouvy v případě služeb Hostingu a Doménového názvu, pokud je to možné podle zákona, musí však informovat Dodavatele a to v dostatečné lhůtě před započetím dalšího kalendářního měsíce.
+10. Závěrečná ustanovení
+    10.2. Smlouvu je možné měnit pouze na základě písemné dohody. Dodavatel jsme však oprávněni změnit a doplnit tyto Podmínky, tato změna se však nedotkne již uzavřených Smluv, ale pouze Smluv, které budou uzavřeny po účinnosti této změny.
+    10.3. V případě vyšší moci nebo událostí, které nelze předvídat (přírodní katastrofa, pandemie, provozní poruchy, výpadky subdodavatelů apod.), nenese Dodavatel odpovědnost za škodu způsobenou v důsledku nebo souvislosti s případy vyšší moci, a pokud stav vyšší moci trvá po dobu delší než 10 dnů, máme Dodavatel i Vy právo od Smlouvy odstoupit.
+    10.4. Smlouva včetně Podmínek je archivována u Dodavatele v elektronické podobě, ale není Odběrateli přístupná. Je zaslána Odběrateli společně s fakturou na Vaši e-mailovou adresu. Odběrateli se doporučuje vždy potvrzení Objednávky a Podmínky uložit.
+    10.5. Tyto Podmínky nabývají účinnosti 14. 9. 2022.

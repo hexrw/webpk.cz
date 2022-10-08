@@ -1,8 +1,13 @@
 <script setup>
 import { reactive, ref, toRef } from "vue"
+import { useRoute } from "vue-router"
 
 
+const { query } = useRoute()
+const webBundle = ref(query.c ? `Web ${query.c.toUpperCase()}` : null)
+const hostingBundle = ref(query.c ? `Hosting ${query.c.toUpperCase()}` : null)
 const budget = ref(10000)
+const osoba = ref("Fyzická osoba podnikatel")
 
 const currentStep = ref("webAHosting")
 const steps = reactive([
@@ -41,8 +46,22 @@ const stepPlugin = (node) => {
     }
 }
 
-const sendForm = _ => {
-    alert("Formulář byl odeslán")
+const sendForm = async (formData, node) => {
+    console.log(formData, node)
+
+    try {
+        const res = await fetch("/api/sendForm", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ formData })
+        })
+        node.clearErrors()
+        alert("Formulář byl odeslán")
+    } catch (err) {
+        node.setErrors(err.formErrors, err.fieldErrors)
+    }
 }
 </script>
 
@@ -50,7 +69,7 @@ const sendForm = _ => {
 <div class="min-h-screen flex flex-col justify-center pt-20 p-5">
     <div class="mx-auto">
         <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Kontaktní Formulář</h1>
-        <p class="mb-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        <p class="mb-4 text-gray-500">Přijímám zakázky pouze z České Republiky.</p>
 
         <div class="p-5 border border-blue-500 rounded-lg shadow shadow-sky-200">
             <ul class="w-full inline-flex mb-8">
@@ -85,6 +104,7 @@ const sendForm = _ => {
                             <FormKit
                                 type="radio"
                                 label="Web"
+                                v-model="webBundle"
                                 :options="[
                                     'Web STATIC',
                                     'Web PLUS',
@@ -96,6 +116,7 @@ const sendForm = _ => {
                             <FormKit
                                 type="radio"
                                 label="Hosting"
+                                v-model="hostingBundle"
                                 :options="[
                                     'Hosting STATIC',
                                     'Hosting PLUS',
@@ -105,6 +126,7 @@ const sendForm = _ => {
                                 validation="required"
                             />
                         </FormKit>
+                        <button class="w-full mt-4 bg-blue-500 hover:bg-blue-600 text-white text-sm font-normal py-3 px-5 rounded-lg mb-1" @click="currentStep = 'oProjektu'">Další</button>
                     </section>
 
                     <section v-show="currentStep === 'oProjektu'">
@@ -125,12 +147,14 @@ const sendForm = _ => {
                             />
 
                             <FormKit
+                                wrapper-class="w-full"
                                 type="textarea"
                                 maxlength="300"
                                 label="Krátce popište svůj projekt"
                                 validation="required|length:10,3000"
                             />
                         </FormKit>
+                        <button class="w-full mt-4 bg-blue-500 hover:bg-blue-600 text-white text-sm font-normal py-3 px-5 rounded-lg mb-1" @click="currentStep = 'vaseUdaje'">Další</button>
                     </section>
 
                     <section v-show="currentStep === 'vaseUdaje'">
@@ -147,10 +171,11 @@ const sendForm = _ => {
                                     'Fyzická osoba podnikatel',
                                     'Právnická osoba (společnost)',
                                 ]"
+                                v-model="osoba"
                                 validation="required"
                             />
 
-                            <div class="block md:inline-flex gap-2">
+                            <div v-if="osoba.startsWith('Fyzická osoba')" class="block md:inline-flex gap-2">
                                 <FormKit
                                     type="text"
                                     label="Jméno"
@@ -163,6 +188,20 @@ const sendForm = _ => {
                                 />
                             </div>
 
+                            <div v-else>
+                                <FormKit
+                                    type="text"
+                                    label="Název subjektu"
+                                />
+                            </div>
+
+                            <FormKit
+                                v-if="osoba !== 'Fyzická osoba nepodnikatel'"
+                                type="text"
+                                label="IČO"
+                                validation="required|number|length:8,8"
+                            />
+
                             <FormKit 
                                 type="email"
                                 label="E-mail"
@@ -172,7 +211,7 @@ const sendForm = _ => {
                             <FormKit
                                 type="tel"
                                 label="Telefon"
-                                validation="required|number|length:6,15"
+                                validation="required|matches:|length:6,15"
                             />
 
                             <FormKit
@@ -181,13 +220,12 @@ const sendForm = _ => {
                                 validation="accepted"
                             />
                         </FormKit>
+                        <FormKit
+                            type="submit"
+                            label="Odeslat"
+                            @click="sendForm(value)"
+                        />
                     </section>
-
-                    <FormKit
-                        type="submit"
-                        label="Odeslat"
-                        @click="sendForm()"
-                    />
 
                     <details>
                         <summary>Form data</summary>

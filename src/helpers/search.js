@@ -20,21 +20,15 @@ export default function search(arr, str) {
     // str = what to search for
     // arr = where to search in
 
+    // `key` = what to replace, `value` = what to replace with
     const toBeReplaced = {
-        "ě": "e",
-        "š": "s",
-        "č": "c",
-        "ř": "r",
-        "ž": "z",
-        "ý": "y",
-        "á": "a",
-        "í": "i",
-        "é": "e",
-        "ů": "u",
-        "ú": "u",
-        "ó": "o",
-        "ť": "t",
-        "ď": "d",
+        "ě": "e", "š": "s",
+        "č": "c", "ř": "r",
+        "ž": "z", "ý": "y",
+        "á": "a", "í": "i",
+        "é": "e", "ů": "u",
+        "ú": "u", "ó": "o",
+        "ť": "t", "ď": "d",
         "ň": "n",
     }
 
@@ -43,7 +37,7 @@ export default function search(arr, str) {
         Object.keys(toBeReplaced).forEach(key => {
             res = res.replace(new RegExp(key, "g"), toBeReplaced[key])
         })
-        res = res.replace(/[^a-z0-9 ]/g, "")
+        res = res.replace(/[^a-z0-9 -]/g, "")
         return res
     }
 

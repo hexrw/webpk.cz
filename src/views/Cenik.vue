@@ -174,7 +174,7 @@ import {
                 <p class="font-light text-gray-500 sm:text-lg">Hosting pro náročnejší projekty s velkou návštěvností.</p>
                 <div class="flex justify-center items-baseline my-8">
                     <span class="text-gray-500 text-2xl">od</span>
-                    <span class="mx-2 text-5xl font-extrabold">250</span>
+                    <span class="mx-2 text-5xl font-extrabold">250 Kč</span>
                     <span class="text-gray-500 text-2xl">/měsíc</span>
                 </div>
                 <!-- List -->

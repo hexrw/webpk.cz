@@ -19,7 +19,7 @@ const particlesInit = async (engine) => {
 }
 
 const particlesLoaded = async (container) => {
-    //console.debug("DEBUG | Particles container loaded", container)
+    //console.debug("Particles container loaded", container)
 }
 
 const blueBlobText = ref(null)
@@ -55,7 +55,7 @@ const blueBlobText = ref(null)
 
                 <div class="p-5 relative drop-shadow bg-white bg-opacity-20 rounded-lg">
                 <dt>
-                    <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white hover:text-amber-800">
+                    <div class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white hover:text-amber-400">
                     <ScaleIcon class="h-6 w-6" />
                     </div>
                     <p class="ml-16 text-lg font-medium leading-6">Stabilní</p>
@@ -200,7 +200,7 @@ const blueBlobText = ref(null)
 </svg>
 
 <div class="py-16 md:py-24 lg:py-32 px-5">
-    <h2 class="font-semibold tracking-tight text-3xl">Proč si vybrat zrovna mě?</h2>
+    <h2 class="font-semibold text-3xl">Proč si vybrat zrovna mě?</h2>
     <dl>
         <div class="pt-5">
             <dt>

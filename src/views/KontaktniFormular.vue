@@ -6,29 +6,37 @@ import useSteps from "../helpers/useSteps.js"
 
 
 const { query } = useRoute()
-const webBundle = ref(query.c ? `Web ${query.c.toUpperCase()}` : null)
-const hostingBundle = ref(query.c ? `Hosting ${query.c.toUpperCase()}` : null)
-const budget = ref(10000)
-const osoba = ref("Fyzická osoba podnikatel")
 
-const value = ref(localStorage.getItem("contactForm") || null)
+const formData = ref({
+    data: {
+        "webAHosting": {
+            "webBundle": query.c ? `Web ${query.c.toUpperCase()}` : null,
+            "hostingBundle": query.c ? `Hosting ${query.c.toUpperCase()}` : null,
+        },
+        "oProjektu": {
+            "budget": 10000,
+        },
+        "vaseUdaje": {
+            "type": "Fyzická osoba podnikatel",
+        },
+    },
+    state: { valid: false }
+})
 
-watch(value, async (newVal, oldVal) => {
-    console.log(JSON.stringify(newVal))
-    localStorage.setItem("contactForm", JSON.stringify(newVal))
+watch(formData, async (newVal, oldVal) => {
+    localStorage.setItem("formData", JSON.stringify(newVal))
 }, { deep: true })
 
 const { steps, visitedSteps, activeStep, setStep, stepPlugin } = useSteps()
 
-const submitApp = async (formData, node) => {
+const submitApp = async (data, node) => {
     try {
         await fetch("/api/saveForm", {
             method: "POST",
-                body: formData
+                body: data
             })
         node.clearErrors()
         alert("Formulář odeslán!")
-        value.value = {}
     } catch (err) {
         node.setErrors(err.formErrors, err.fieldErrors)
         alert("Chyba!")
@@ -40,22 +48,24 @@ const checkStepValidity = (stepName) => {
 }
 
 onMounted(async _ => {
-    if (localStorage.getItem("contactForm") !== null) value.value = JSON.parse(localStorage.getItem("contactForm"))
+    console.log(localStorage.getItem("formData") !== null)
+    console.log(formData.value.data)
+    console.log(JSON.parse(localStorage.getItem("formData")))
+    if (localStorage.getItem("formData") !== null) formData.value.data = JSON.parse(localStorage.getItem("formData"))
 })
 </script>
 
 <template>
-<div class="min-h-screen flex flex-col justify-center pt-20 p-5">
-<div class="mx-auto w-full max-w-2xl border border-slate-200 p-10 rounded-lg">
+<div class="min-h-screen flex flex-col justify-center pt-20 p-0 md:p-5">
+<div class="mx-auto w-full max-w-2xl border-0 md:border border-slate-20+0 p-10 rounded-none md:rounded-lg">
 
 <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Kontaktní Formulář</h1>
 <p class="mb-4 text-gray-500">Přijímám zakázky pouze z České Republiky.</p>
 
 <FormKit
     type="form"
-    #default="{ value, state: { valid } }"
-    v-model="value"
-    :plugins="[stepPlugin]"
+    v-model="formData.data"
+    :plugins="[ stepPlugin ]"
     @submit="submitApp"
     :actions="false"
 >
@@ -94,7 +104,6 @@ onMounted(async _ => {
                     type="radio"
                     name="webBundle"
                     label="*Web"
-                    v-model="webBundle"
                     :options="[
                         'Web STATIC',
                         'Web PLUS',
@@ -107,7 +116,6 @@ onMounted(async _ => {
                     type="radio"
                     name="hostingBundle"
                     label="*Hosting"
-                    v-model="hostingBundle"
                     :options="[
                         'Hosting STATIC',
                         'Hosting PLUS',
@@ -128,8 +136,7 @@ onMounted(async _ => {
                 <FormKit
                     type="range"
                     name="budget"
-                    :label="'*Rozpočet: ' + budget"
-                    v-model="budget"
+                    :label="'*Rozpočet: ' + ['budget']"
                     min="5000"
                     max="75000"
                     step="2500"
@@ -163,11 +170,10 @@ onMounted(async _ => {
                         'Fyzická osoba podnikatel',
                         'Právnická osoba (společnost)',
                     ]"
-                    v-model="osoba"
                     validation="required"
                 />
 
-                <div v-if="osoba.startsWith('Fyzická osoba')" class="block md:inline-flex gap-2">
+                <div v-if="'osoba'.startsWith('Fyzická osoba')" class="block md:inline-flex gap-2">
                     <FormKit
                         type="text"
                         name="firstName"
@@ -191,7 +197,7 @@ onMounted(async _ => {
                 </div>
 
                 <FormKit
-                    v-if="osoba !== 'Fyzická osoba nepodnikatel'"
+                    v-if="'osoba' !== 'Fyzická osoba nepodnikatel'"
                     type="text"
                     name="ico"
                     label="*IČO"
@@ -230,10 +236,10 @@ onMounted(async _ => {
 
     <details>
         <summary>Form data</summary>
-        <pre>{{ value }}</pre>
+        <pre>{{ formData.data }}</pre>
     </details>
 
-    <FormKit type="submit" label="Odeslat" :disabled="!valid" />
+    <FormKit type="submit" label="Odeslat" :disabled="!formData.state.valid" />
 </FormKit>
 
 </div>

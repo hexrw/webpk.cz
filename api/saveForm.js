@@ -40,8 +40,6 @@ async function handler(req, res) {
 
     const Form = conn.model("Form")
 
-    console.log(req.body)
-
     await new Form(req.body).save({})
 
     res.status(201)

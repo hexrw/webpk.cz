@@ -1,40 +1,25 @@
-import mongoose from "mongoose"
+import fetch from "node-fetch"
 
 
-let conn = null
-
-const uri = process.env.MONGODB_URI
-
-async function handler(req, res) {
-    if (conn == null) {
-        conn = mongoose.createConnection(uri, {
-            serverSelectionTimeoutMS: 5000,
-            dbName: "db"
-        })
-
-        await conn.asPromise()
-        conn.model("Faq", new mongoose.Schema({
-            title: String,
-            content: String,
-        }, { collection: "faq" }))
-    }
-
-    const Faq = conn.model("Faq")
-
-    const docs = await Faq.find({})
-    
-    console.log(docs)
-    
-    res.status(200).json(docs)
-}
-
-export default async function (req, res) {
-    try {
-        await handler(req, res)
-    } catch (error) {
-        return res.status(500).json({
+export default async function handler (req, res) {
+    await fetch(`${process.env.MONGODB_ENDPOINT}/action/find`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Request-Headers": "*",
+            "api-key": process.env.MONGODB_KEY,
+        },
+        body: JSON.stringify({
+            database: "db",
+            dataSource: "Cluster0",
+            collection: "faq",
+        }),
+    }).then(res => res.json()).then(data => {
+        res.status(200).json(data.documents)
+    }).catch(err => {
+        res.status(500).json({
             detail: "Internal server error",
-            message: error.message,
+            message: err.message,
         })
-    }
+    })
 }

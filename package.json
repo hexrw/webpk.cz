@@ -1,7 +1,7 @@
 {
   "name": "webpk.cz",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port 5000",
@@ -15,7 +15,7 @@
     "@heroicons/vue": "^2.0.10",
     "fastest-levenshtein": "^1.0.16",
     "levenshtein-wasm": "^1.2.0",
-    "mongoose": "^6.6.1",
+    "node-fetch": "^3.2.10",
     "particles.vue3": "^2.2.4",
     "tailwind-scrollbar": "^2.0.1",
     "tsparticles": "^2.2.4",

@@ -1,57 +1,26 @@
-import mongoose from "mongoose"
+import fetch from "node-fetch"
 
 
-let conn = null
-
-const uri = process.env.MONGODB_URI
-
-async function handler(req, res) {
-    if (conn == null) {
-        conn = mongoose.createConnection(uri, {
-            serverSelectionTimeoutMS: 5000,
-            dbName: "db"
-        })
-
-        await conn.asPromise()
-        conn.model("Form", new mongoose.Schema({
-            "webAHosting": {
-                "webBundle": String,
-                "hostingBundle": String
-            },
-            "oProjektu": {
-                "budget": Number,
-                "description": String
-            },
-            "vaseUdaje": {
-                "type": String,
-                "firstName": String,
-                "lastName": String,
-                "companyName": String,
-                "ico": Number,
-                "email": String,
-                "phone": String,
-                "consent": Boolean,
-            }
-        }, {
+export default async function handler (req, res) {
+    await fetch(`${process.env.MONGODB_ENDPOINT}/action/insertOne`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Request-Headers": "*",
+            "api-key": process.env.MONGODB_KEY,
+        },
+        body: JSON.stringify({
+            database: "db",
+            dataSource: "Cluster0",
             collection: "contactForm",
-            strict: true,
-        }))
-    }
-
-    const Form = conn.model("Form")
-
-    await new Form(req.body).save({})
-
-    res.status(201)
-}
-
-export default async function (req, res) {
-    try {
-        await handler(req, res)
-    } catch (error) {
-        return res.status(500).json({
+            document: JSON.parse(req.body),
+        }),
+    }).then(res => res.json()).then(data => {
+        res.status(201).json(data)
+    }).catch(err => {
+        res.status(500).json({
             detail: "Internal server error",
-            message: error.message,
+            message: err.message,
         })
-    }
+    })
 }

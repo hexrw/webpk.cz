@@ -17,7 +17,7 @@ import {
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             <!-- Pricing Card -->
-            <div class="flex flex-col p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-emerald-200 shadow shadow-emerald-200">
+            <div class="flex flex-col w-full p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-emerald-200 shadow shadow-emerald-200">
                 <h3 class="mb-4 text-2xl font-semibold">Web&nbsp;<span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-600">STATIC</span></h3>
                 <p class="font-light text-gray-500 sm:text-lg">Nejlepší volba pro malé podniky či jednotlivce. Vaše online vizitka.</p>
                 <div class="flex justify-center items-baseline my-8">
@@ -36,14 +36,14 @@ import {
                     </li>
                     <li class="flex items-center space-x-3">
                         <XMarkIcon class="flex-shrink-0 w-5 h-5 text-red-500" />
-                        <span>Úprava obsahu skrz administrátorské rozhraní</span>
+                        <span>Administrátorské rozhraní</span>
                     </li>
                 </ul>
                 <span class="grow"></span> <!-- This is a spacer -->
                 <router-link to="/kontaktni-formular?c=static" class="select-none p-5 rounded-lg bg-gradient-to-r from-teal-400 to-emerald-300 hover:from-teal-500 hover:to-emerald-400 focus:ring-4 focus:ring-emerald-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
             </div>
             <!-- Pricing Card -->
-            <div class="flex flex-col p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-amber-200 shadow shadow-amber-200">
+            <div class="flex flex-col w-full p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-amber-200 shadow shadow-amber-200">
                 <h3 class="mb-4 text-2xl font-semibold">Web&nbsp;<span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-600">PLUS</span></h3>
                 <p class="font-light text-gray-500 sm:text-lg">Web s databází a případnými APIs.</p>
                 <div class="flex justify-center items-baseline my-8">
@@ -62,14 +62,14 @@ import {
                     </li>
                     <li class="flex items-center space-x-3">
                         <CheckIcon class="flex-shrink-0 w-5 h-5 text-green-500" />
-                        <span>Úprava obsahu skrz administrátorské rozhraní</span>
+                        <span>Administrátorské rozhraní</span>
                     </li>
                 </ul>
                 <span class="grow"></span> <!-- This is a spacer -->
                 <router-link to="/kontaktni-formular?c=plus" class="select-none p-5 rounded-lg bg-gradient-to-r from-amber-500 to-yellow-300 hover:from-amber-600 hover:to-yellow-400 focus:ring-4 focus:ring-amber-500 font-medium text-sm px-5 py-2.5 text-center">Mám zájem</router-link>
             </div>
             <!-- Pricing Card -->
-            <div class="flex flex-col p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-violet-400 shadow shadow-violet-200">
+            <div class="flex flex-col w-full p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-violet-400 shadow shadow-violet-200">
                 <h3 class="mb-4 text-2xl font-semibold">Web&nbsp;<span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-600">PRO</span></h3>
                 <p class="font-light text-gray-500 sm:text-lg">Nevyhovuje vám ani jeden z předcházejících balíčků?</p>
                 <div class="flex justify-center items-baseline my-8">

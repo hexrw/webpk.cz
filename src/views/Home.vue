@@ -10,6 +10,7 @@ import {
     ServerStackIcon,
     PaintBrushIcon,
     MagnifyingGlassIcon,
+    ArrowRightIcon,
 } from "@heroicons/vue/24/outline"
 import { loadFull } from "tsparticles"
 
@@ -23,6 +24,14 @@ const particlesLoaded = async (container) => {
 }
 
 const blueBlobText = ref(null)
+
+const procSiVybratZrovnaMe = {
+    "Komunikace": "Nestane se, že bych Vám přestal odpovídat. Věci Vám řeknu na rovinu, termíny, která Vám dám, dodržím.",
+    "Rozumné ceny": "Nikdo přece nechce platit desítky tisíc za obyčejné webové stránky. Moje ceny jsou fér a úměrné rozsáhlosti projektu.",
+    "Rychlost": "Dle statistik od společnosti Google <a class='text-blue-700 underline hover:no-underline' href='https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/' target='_blank'>53% návštěvníků z telefonu opustí webovou stránku, která se načítá déle než 3 vteřiny</a>. Rychlost je pro mne prioritou.",
+    "Inviduální přístup": "Každý projekt je jiný a každý klient má jiné požadavky. Proto ke každému projektu přistupuji individuálně.",
+    "Spolehlivost": "Co řeknu, dodržím",
+}
 </script>
 
 <template>
@@ -201,26 +210,20 @@ const blueBlobText = ref(null)
 
 <div class="py-16 md:py-24 lg:py-32 px-5">
     <h2 class="font-semibold text-3xl">Proč si vybrat zrovna mě?</h2>
-    <dl>
-        <div class="pt-5">
-            <dt>
-                <p class="text-2xl tracking-wide pb-2">Komunikace</p>
-            </dt>
-            <dd class="text-lg">Nestane se, že bych Vám přestal odpovídat. Věci Vám řeknu na rovinu, termíny, která Vám dám, dodržím.</dd>
+    <div class="flex flex-col gap-4">
+    <div
+        v-for="(val, key) in procSiVybratZrovnaMe"
+        :key="key"
+        class="pt-5 flex flex-col md:flex-row md:items-center gap-2"
+    >
+        <div class="inline-flex gap-2 items-center">
+            <ArrowRightIcon class="w-8 h-8 text-white bg-blue-500 stroke-2 rounded-full p-1" />
+            <p class="text-2xl my-auto tracking-wide" v-html="key" />
         </div>
-        <div class="pt-5">
-            <dt>
-                <p class="text-2xl tracking-wide pb-2">Rozumné ceny</p>
-            </dt>
-            <dd class="text-lg">Nikdo přece nechce platit desítky tisíc za obyčejné webové stránky. Moje ceny jsou fér a úměrné rozsáhlosti projektu.</dd>
-        </div>
-        <div class="pt-5">
-            <dt>
-                <p class="text-2xl tracking-wide pb-2">Rychlost</p>
-            </dt>
-            <dd class="text-lg">Dle statistik od společnosti Google <a class="text-blue-700 underline hover:no-underline" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/" target="_blank">53% návštěvníků z telefonu opustí webovou stránku, která se načítá déle než 3 vteřiny</a>. Proto je pro mne rychlost prioritou.</dd>
-        </div>
-    </dl>
+        <span class="hidden md:block">-</span>
+        <p class="text-lg my-auto grow-0" v-html="val" />
+    </div>
+    </div>
 </div>
 
 </template>

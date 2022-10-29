@@ -248,11 +248,6 @@ onMounted(async _ => {
                 <FormKit type="button" class="ml-auto" :disabled="activeStep == 'vaseUdaje' " @click="setStep(1)" v-text="'Další'"/>
             </div>
 
-            <details>
-                <summary>Form data</summary>
-                <pre>{{ value }}</pre>
-            </details>
-
             <FormKit type="submit" label="Odeslat" :disabled="!valid" />
         </FormKit>
 

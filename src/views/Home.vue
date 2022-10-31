@@ -30,7 +30,7 @@ const procSiVybratZrovnaMe = {
     "Rozumné ceny": "Nikdo přece nechce platit desítky tisíc za obyčejné webové stránky. Moje ceny jsou fér a úměrné rozsáhlosti projektu.",
     "Rychlost": "Dle statistik od společnosti Google <a class='text-blue-700 underline hover:no-underline' href='https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/' target='_blank'>53% návštěvníků z telefonu opustí webovou stránku, která se načítá déle než 3 vteřiny</a>. Rychlost je pro mne prioritou.",
     "Inviduální přístup": "Každý projekt je jiný a každý klient má jiné požadavky. Proto ke každému projektu přistupuji individuálně.",
-    "Spolehlivost": "Co řeknu, dodržím",
+    "Spolehlivost": "Co řeknu, dodržím.",
 }
 </script>
 

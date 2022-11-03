@@ -3,6 +3,7 @@ import { ref, computed, watch, onMounted } from "vue"
 import { useRoute } from "vue-router"
 import { camel2title } from "../helpers/utils.js"
 import useSteps from "../helpers/useSteps.js"
+import { alertModal, successModal } from "../helpers/modal.js"
 
 
 const { query } = useRoute()
@@ -29,17 +30,34 @@ const formData = computed(_ => {
 const { steps, visitedSteps, activeStep, setStep, stepPlugin } = useSteps()
 
 const submitApp = async (body, node) => {
-    try {
-        await fetch("/api/saveForm", {
-            method: "POST",
-                body: JSON.stringify(body),
-            })
-        node.clearErrors()
-        alert("Formulář odeslán!")
-    } catch (err) {
-        node.setErrors(err.formErrors, err.fieldErrors)
-        alert("Chyba!")
-    }
+    await fetch("/api/saveForm", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+    })
+        .then(res => res.json())
+        .then(json => {
+            if ("insertedId" in json) {
+                webAHosting.value = {}
+                oProjektu.value = {
+                    budget: 10000,
+                }
+                vaseUdaje.value = {
+                    type: "Fyzická osoba podnikatel",
+                }
+                localStorage.removeItem("formData")
+                successModal("Formulář úspěšně odeslán")
+            } else {
+                alertModal("Formulář se nepodařilo odeslat")
+                console.log(json)
+            }
+        })
+        .catch(err => {
+            alertModal("Formulář se nepodařilo odeslat")
+            console.error(err)
+        })
 }
 
 const checkStepValidity = (stepName) => {
@@ -236,7 +254,7 @@ onMounted(async _ => {
                             type="checkbox"
                             name="consent"
                             label="*Souhlasím se zpracováním osobních údajů"
-                            validation="accepted"
+                            validation="required|accepted"
                         />
                     </FormKit>
                 </section>

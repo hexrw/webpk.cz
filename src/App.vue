@@ -1,4 +1,5 @@
 <script setup>
+import Modal from "./components/Modal.vue"
 import Nav from "./components/Nav.vue"
 import Footer from "./components/Footer.vue"
 import { useRoute } from "vue-router"
@@ -8,6 +9,7 @@ const route = useRoute()
 </script>
 
 <template>
+<Modal />
 <Nav />
 <router-view v-slot="{ Component }">
     <Transition

@@ -30,6 +30,7 @@ Pokud některá část Podmínek odporuje tomu, co jsme si společně schválili
     4.3. Hodinová sazba se počítá za každou započatou hodinu.
     4.4. Konečná Celková cena se může lišit od původního odhadu Dodavatele. V takovém případě bude Dodavatel odběratele informovat.
     4.5. Při neuhrazení ceny v souladu s těmito obchodními podmínkami a dohodnutými podmínkami, má Dodavatel právo přestat poskytovat danou službu.
+    4.6. Výše hodinové sazby je uvedena na webových stránkách webpk.cz v sekci "Ceník".
 5. Reklamace
     5.1. Reklamace je možná pouze v případě, že nebyli Dodavatelem splněny předem domluvené podmínky, nebo je produkt nefunkční.
     5.2. Reklamaci je možné podat v písemné formě na e-mailovou adresu.

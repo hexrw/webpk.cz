@@ -200,9 +200,13 @@ const procSiVybratZrovnaMe = {
                 <MagnifyingGlassIcon class="w-12 mx-auto md:mx-0" />
                 <p class="text-xl font-bold my-auto text-center md:text-left">Optimalizace pro vyhledávače</p>
             </dt>
-            <dd class="text-center md:text-left">Chcete být vidět? Vaše stránky optimalizuji pro vyhledávače. To vás dostane mezi první výsledky ve vyhledávání a tím zvýší návštěvnost.</dd>
+            <dd class="text-center md:text-left">Chcete být vidět? Vaše stránky optimalizuji pro vyhledávače. To Vás dostane mezi první výsledky ve vyhledávání a tím zvýší návštěvnost.</dd>
         </div>
     </dl>
+    <router-link
+        to="/cenik"
+        class="w-fit bg-gray-800 text-lg shadow-lg text-white font-bold py-2 px-10 rounded-md mx-auto block mt-12"
+    >Přejít na ceník</router-link>
 </div>
 <svg class="bg-blue-500 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
     <path d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,213.3C672,203,768,181,864,181.3C960,181,1056,203,1152,213.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -214,16 +218,21 @@ const procSiVybratZrovnaMe = {
     <div
         v-for="(val, key) in procSiVybratZrovnaMe"
         :key="key"
-        class="pt-5 flex flex-col md:flex-row md:items-center gap-2"
+        class="pt-5 flex flex-col lg:flex-row lg:items-center gap-2"
     >
         <div class="inline-flex gap-2 items-center">
             <ArrowRightIcon class="w-8 h-8 text-white bg-blue-500 stroke-2 rounded-full p-1" />
             <p class="text-2xl my-auto tracking-wide" v-html="key" />
         </div>
-        <span class="hidden md:block">-</span>
+        <span class="hidden lg:block">-</span>
         <p class="text-lg my-auto grow-0" v-html="val" />
     </div>
     </div>
+</div>
+
+<div class="p-5">
+    <h2 class="font-semibold text-3xl">Přesvědčil jsem Vás?</h2>
+    <p class="text-xl pt-2">Kontaktujte mne prosím prostřednictvím <router-link to="/kontaktni-formular" class="underline hover:no-underline text-blue-500">kontaktního formuláře</router-link>.</p>
 </div>
 
 </template>

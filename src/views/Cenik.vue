@@ -10,7 +10,7 @@ import {
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Ceník</h1>
-            <p class="mb-5 font-light text-gray-500 sm:text-xl">Ceník je pouze <b class="font-bold">orientační</b>. Ke každému klientovi přistupuji inviduálně, proto se konečná cena může lišit v závislosti na obtížnosti projektu a Vašem rozpočtu. Balíčky je možno kombinovat.</p>
+            <p class="mb-5 font-light text-gray-500 sm:text-xl">Ceník je pouze <b class="font-bold">orientační</b>. Ke každému klientovi přistupuji inviduálně, proto se konečná cena může lišit v závislosti na obtížnosti projektu a Vašem rozpočtu.</p>
             <p class="mb-5 font-light text-gray-500 sm:text-xl">Následné menší úpravy jsou zpravidla v cenně balíčku, za větší úpravy si účtuji hodinovou sazbu 400 Kč.</p>
         </div>
         <div class="mx-auto max-w-screen-md lg:max-w-screen-xl text-center lg:text-left mb-8 lg:mb-12">

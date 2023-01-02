@@ -5,7 +5,7 @@
 
 <footer class="px-4 sm:px-6 bg-gray-900 pt-20 md:pt-28 pb-4">
     <div class="md:flex md:justify-between pb-8">
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-4">
             <div>
                 <h2 class="mb-6 text-sm font-semibold uppercase text-white">Kontakt</h2>
                 <ul class="text-gray-400">
@@ -47,6 +47,16 @@
                     </li>
                     <li class="pt-4 italic">
                         Nejsem plátcem DPH.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="text-gray-400">
+                    <li>
+                        <p>Číslo bankovního účtu:</p>
+                    </li>
+                    <li>
+                        <p><b class="font-bold">245550684/0300</b></p>
                     </li>
                 </ul>
             </div>

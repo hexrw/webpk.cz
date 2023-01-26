@@ -8,6 +8,7 @@ const exceptions = [
     "404",
     "Zásady zpracování osobních údajů",
     "Obchodní podmínky",
+    "Projektový formulář"
 ]
 
 const router = useRouter()

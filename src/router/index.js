@@ -33,6 +33,11 @@ const routes = [
         component: _ => import("../views/ZasadyZpracovaniOsobnichUdaju.vue")
     },
     {
+        path: "/projektovy-formular",
+        name: "Projektový formulář",
+        component: _ => import("../views/ProjektovyFormular.vue")
+    },
+    {
         path: "/:pathMatch(.*)",
         name: "404",
         component: _ => import("../components/404.vue")

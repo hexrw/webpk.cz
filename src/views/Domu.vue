@@ -85,7 +85,7 @@ const procSiVybratZrovnaMe = {
         </div>
     </div>
     <div class="bottom-14 text-center hidden md:block absolute w-full">
-        <button class="bg-slate-100 rounded-full p-2" @click="blueBlobText.scrollIntoView({ behavior: 'smooth', block: 'center' })">
+        <button class="bg-slate-100 rounded-full p-2 transition-all hover:scale-125" @click="blueBlobText.scrollIntoView({ behavior: 'smooth', block: 'center' })">
             <ArrowDownIcon class="h-12 w-12" />
         </button>
     </div>
@@ -205,7 +205,7 @@ const procSiVybratZrovnaMe = {
     </dl>
     <router-link
         to="/cenik"
-        class="w-fit bg-gray-800 text-lg shadow-lg text-white font-bold py-2 px-10 rounded-md mx-auto block mt-12"
+        class="w-fit bg-gray-800 text-lg shadow-lg text-white font-bold py-2 px-10 rounded-md mx-auto block mt-12 transition-all hover:scale-110"
     >Přejít na ceník</router-link>
 </div>
 <svg class="bg-blue-500 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">

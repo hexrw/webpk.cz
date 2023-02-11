@@ -5,12 +5,17 @@ const routes = [
     {
         path: "/",
         name: "Domů",
-        component: _ => import("../views/Home.vue")
+        component: _ => import("../views/Domu.vue")
     },
     {
         path: "/cenik",
         name: "Ceník",
         component: _ => import("../views/Cenik.vue")
+    },
+    {
+        path: "/reference",
+        name: "Reference",
+        component: _ => import("../views/Reference.vue"),
     },
     {
         path: "/kontaktni-formular",

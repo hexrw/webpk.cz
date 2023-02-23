@@ -23,7 +23,7 @@ import {
                 <p class="font-light text-gray-500 sm:text-lg">Nejlepší volba pro malé podniky či jednotlivce. Vaše online vizitka.</p>
                 <div class="flex justify-center items-baseline my-8">
                     <span class="text-gray-500 text-2xl">od</span>
-                    <span class="ml-2 text-5xl font-extrabold">6 000 Kč</span>
+                    <span class="ml-2 text-5xl font-extrabold">5 000 Kč</span>
                 </div>
                 <!-- List -->
                 <ul role="list" class="mb-8 space-y-4 text-left">
@@ -49,7 +49,7 @@ import {
                 <p class="font-light text-gray-500 sm:text-lg">Web s databází a případnými APIs.</p>
                 <div class="flex justify-center items-baseline my-8">
                     <span class="text-gray-500 text-2xl">od</span>
-                    <span class="ml-2 text-5xl font-extrabold">12 000 Kč</span>
+                    <span class="ml-2 text-5xl font-extrabold">10 000 Kč</span>
                 </div>
                 <!-- List -->
                 <ul role="list" class="mb-8 space-y-4 text-left">

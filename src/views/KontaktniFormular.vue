@@ -83,7 +83,7 @@ onMounted(async _ => {
 <template>
 <div class="flex flex-col lg:flex-row">
     <div class="w-full lg:w-1/4 mt-12 md:mt-16 lg:my-auto p-5">
-        <p class="text-lg md:text-xl text-center lg:text-left">V případě nejasností mě neváhejte kontaktovat na <a target="_blank" href="https://www.facebook.com/messages/t/107317268808297" class="underline hover:no-underline text-blue-600">Messengeru</a> nebo e-mailu <a href="mailto:info@webpk.cz" class="underline hover:no-underline text-blue-600">info@webpk.cz</a></p>
+        <p class="text-lg md:text-xl text-center lg:text-left">V případě nejasností se obraťte na <router-link class="underline hover:no-underline text-blue-600" to="/faq">FAQ</router-link> nebo mě kontaktujte na <a target="_blank" href="https://www.facebook.com/messages/t/107317268808297" class="underline hover:no-underline text-blue-600">Messengeru</a> či e-mailu <a href="mailto:info@webpk.cz" class="underline hover:no-underline text-blue-600">info@webpk.cz</a></p>
     </div>
     <div class="w-full lg:w-2/4 min-h-screen flex flex-col lg:justify-center lg:pt-20 p-0 lg:p-5">
         <div class="mx-auto w-full max-w-2xl border-0 md:border border-slate-20+0 p-10 rounded-none md:rounded-lg">
@@ -285,8 +285,8 @@ onMounted(async _ => {
     </li>
     <li class="mb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-        <span class="mb-1 font-normal leading-none text-gray-800">Potvrzení</span>
-        <p class="mb-4 text-base font-normal text-gray-500">Potvrdím, že je v mých silách projekt realizovat. Vyřešíme jakékoli právní záležitosti.</p>
+        <span class="mb-1 font-normal leading-none text-gray-800">Odpověď</span>
+        <p class="mb-4 text-base font-normal text-gray-500">Ozvu se vám zpět.</p>
     </li>
     <li class="mb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
@@ -296,22 +296,22 @@ onMounted(async _ => {
     <li class="mb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
         <span class="mb-1 font-normal leading-none text-gray-800">Nastínění</span>
-        <p class="mb-4 text-base font-normal text-gray-500">Nastíním Vám konečnou cenu za projekt, jak dlouho bude vše trvat, vyřešíme jakékoli nejasnosti.</p>
+        <p class="mb-4 text-base font-normal text-gray-500">Nastíním vám konečnou cenu za projekt, jak dlouho bude vše trvat, vyřešíme jakékoli nejasnosti.</p>
     </li>
     <li class="mb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
         <span class="mb-1 font-normal leading-none text-gray-800">Záloha</span>
-        <p class="mb-4 text-base font-normal text-gray-500">Zaplatíte zálohu</p>
+        <p class="mb-4 text-base font-normal text-gray-500">Zaplatíte zálohu.</p>
     </li>
     <li class="mb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
         <span class="mb-1 font-normal leading-none text-gray-800">Realizace projektu</span>
-        <p class="mb-4 text-base font-normal text-gray-500">Vypracuji Váš projekt.</p>
+        <p class="mb-4 text-base font-normal text-gray-500">Vypracuji váš projekt.</p>
     </li>
     <li class="mb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-        <span class="mb-1 font-normal leading-none text-gray-800">Doplatek</span>
-        <p class="mb-4 text-base font-normal text-gray-500">Pokud je konečná cena projektu vyšší než záloha, doplácíte rozdíl.</p>
+        <span class="mb-1 font-normal leading-none text-gray-800">Platba</span>
+        <!--<p class="mb-4 text-base font-normal text-gray-500">...</p>-->
     </li>
 </ol>
 

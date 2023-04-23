@@ -1,5 +1,9 @@
+<script setup>
+import KontaktniFormular from "./KontaktniFormular.vue"
+</script>
+
 <template>
 
-a
+<KontaktniFormular />
 
 </template>

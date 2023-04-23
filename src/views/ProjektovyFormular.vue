@@ -12,7 +12,7 @@ function submit () {
 <template>
 <div class="w-full flex mx-auto">
 
-<div v-if="query.id" class="mt-24 p-5 rounded-md border border-gray-800 w-full max-w-6xl mx-auto">
+<div v-if="query.id" class="mt-24 p-5 rounded-md border border-gray-800 w-full max-w-6xl mx-5 lg:mx-auto">
 
 <FormKit
     type="form"
@@ -20,7 +20,7 @@ function submit () {
     @submit="submit"
     :actions="false"
 >
-    <FormKit type="text" label="ID" name="id" id="id" :value="query.id" disabled="true" />
+    <FormKit type="text" name="id" id="id" label="ID" :value="query.id" disabled="true" />
     <FormKit type="submit" label="Odeslat" />
     
     <pre class="p-5">{{ value }}</pre>

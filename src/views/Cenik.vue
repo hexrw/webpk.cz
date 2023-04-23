@@ -46,7 +46,7 @@ import {
             <!-- Pricing Card -->
             <div class="flex flex-col w-full p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-amber-200 shadow shadow-amber-200">
                 <h3 class="mb-4 text-2xl font-semibold">Web&nbsp;<span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-600">PLUS</span></h3>
-                <p class="font-light text-gray-500 sm:text-lg">Web s databází a případnými APIs.</p>
+                <p class="font-light text-gray-500 sm:text-lg">Web s databází a případnými API.</p>
                 <div class="flex justify-center items-baseline my-8">
                     <span class="text-gray-500 text-2xl">od</span>
                     <span class="ml-2 text-5xl font-extrabold">10 000 Kč</span>
@@ -136,14 +136,14 @@ import {
                     </li>
                     <li class="flex items-center space-x-3">
                         <XMarkIcon class="flex-shrink-0 w-5 h-5 text-red-500" />
-                        <span>Případná APIs</span>
+                        <span>Případná API</span>
                     </li>
                 </ul>
             </div>
             <!-- Pricing Card -->
             <div class="flex w-full flex-col p-6 md:hover:scale-105 transition duration-300 ease-in-out mx-auto max-w-lg text-center text-gray-900 bg-white rounded-2xl border border-amber-200 shadow shadow-amber-200">
                 <h3 class="mb-4 text-2xl font-semibold">Hosting <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-600">PLUS</span></h3>
-                <p class="font-light text-gray-500 sm:text-lg">Hosting pro web s větší návštěvností, databázi a případná APIs.</p>
+                <p class="font-light text-gray-500 sm:text-lg">Hosting pro web s větší návštěvností, databázi a případná API.</p>
                 <div class="flex justify-center items-baseline my-8">
                     <span class="text-gray-500 text-2xl">od</span>
                     <span class="mx-2 text-5xl font-extrabold">150 Kč</span>
@@ -165,7 +165,7 @@ import {
                     </li>
                     <li class="flex items-center space-x-3">
                         <CheckIcon class="flex-shrink-0 w-5 h-5 text-green-500" />
-                        <span>Případná APIs</span>
+                        <span>Případná API</span>
                     </li>
                 </ul>
             </div>
@@ -194,7 +194,7 @@ import {
                     </li>
                     <li class="flex items-center space-x-3">
                         <CheckIcon class="flex-shrink-0 w-5 h-5 text-green-500" />
-                        <span>Případná APIs</span>
+                        <span>Případná API</span>
                     </li>
                 </ul>
             </div>

@@ -64,7 +64,7 @@
     </div>
     <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8">
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm sm:text-center text-gray-400">Copyright &copy; {{ new Date().getFullYear() }} Petr Kolonicz
+        <span class="text-sm sm:text-center text-gray-400">Copyright &copy; 2022 - {{ new Date().getFullYear() }} Petr Kolonicz
         </span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="https://www.facebook.com/profile.php?id=100085930249730" target="_blank" class="text-gray-500 hover:text-white">

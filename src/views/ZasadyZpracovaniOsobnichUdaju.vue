@@ -5,7 +5,7 @@
 Kontaktní údaje správce
 
 Název: Petr Kolonicz
-Adresa sídla: Špičák 118, 381 01 Český Krumlov
+Adresa sídla: Radniční 133/1, České Budějovice 1, 370 01 České Budějovice
 IČO: 17503400
 E-mail: spravce@webpk.cz
 
